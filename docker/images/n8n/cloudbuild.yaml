@@ -8,8 +8,8 @@ steps:
       - docker/images/n8n
       - '-f'
       - docker/images/n8n/Dockerfile
-			- '--build-arg'
-			- 'N8N_VERSION=0.18'
+      - '--build-arg'
+      - 'N8N_VERSION=0.18'
     id: Build
   - name: gcr.io/cloud-builders/docker
     args:
