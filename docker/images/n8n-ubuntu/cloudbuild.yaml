@@ -11,7 +11,7 @@ steps:
       - '--build-arg'
       - 'N8N_VERSION=0.18'
     env:
-      - 'N8N_PORT=5678'
+      - 'N8N_PORT=8080'
     id: Build
   - name: gcr.io/cloud-builders/docker
     args:
