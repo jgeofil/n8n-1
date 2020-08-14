@@ -3,14 +3,13 @@ steps:
     args:
       - build
       - '--no-cache'
-			- N8N_VERSION=0.18.1
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA'
       - docker/images/n8n
       - '-f'
       - docker/images/n8n/Dockerfile
-		env:
-			- 'N8N_VERSION=0.18.1'
+    env:
+	    - 'N8N_VERSION=0.18.1'
     id: Build
   - name: gcr.io/cloud-builders/docker
     args:
