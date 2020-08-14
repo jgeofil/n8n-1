@@ -3,7 +3,7 @@ steps:
     args:
       - build
       - '--no-cache'
-      - '--build-arg N8N_VERSION=0.18'
+      - 'N8N_VERSION=0.18'
       - '-t'
       - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME:$COMMIT_SHA'
       - docker/images/n8n
