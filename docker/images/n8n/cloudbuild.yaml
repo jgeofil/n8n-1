@@ -9,7 +9,7 @@ steps:
       - '-f'
       - docker/images/n8n/Dockerfile
     env:
-	    - 'N8N_VERSION=0.18.1'
+      - 'N8N_VERSION=0.18.1'
     id: Build
   - name: gcr.io/cloud-builders/docker
     args:
