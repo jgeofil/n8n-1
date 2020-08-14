@@ -10,7 +10,7 @@ steps:
       - docker/images/n8n/Dockerfile
       - '--build-arg'
       - 'N8N_VERSION=0.18'
-		env:
+    env:
       - 'N8N_PORT=5678'
     id: Build
   - name: gcr.io/cloud-builders/docker
