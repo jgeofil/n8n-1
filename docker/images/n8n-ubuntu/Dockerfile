@@ -20,4 +20,4 @@ WORKDIR /data
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
-EXPOSE 8080/tcp
+EXPOSE 8080
