@@ -14,7 +14,7 @@ USER root
 RUN npm_config_user=root npm install -g full-icu n8n@${N8N_VERSION}
 
 ENV NODE_ICU_DATA /usr/local/lib/node_modules/full-icu
-ENV N8N_PORT 8080
+ENV N8N_PORT 0.0.0.0:8080
 
 WORKDIR /data
 
